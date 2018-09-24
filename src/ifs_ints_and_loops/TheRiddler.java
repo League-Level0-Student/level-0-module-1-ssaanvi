@@ -24,7 +24,7 @@ public class TheRiddler {
 				+ "What am I?");
 
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-		String realanswer= ("Anchor)");
+		String realanswer= ("Anchor");
 		if (answer.equalsIgnoreCase(realanswer)){
 			JOptionPane.showMessageDialog(null, "Great job, " +name+ "! Now for your next question...");
 			Score++;
@@ -36,13 +36,13 @@ public class TheRiddler {
 
 		// 6. Add some more riddles
 		String question2 =JOptionPane.showInputDialog("You have 1 more question...Your next one is, Many have heard me, but no one has seen me, and I will not speak back, til' I've been spoken to. What am I?");
-String answer1 = ("An Echo");
-if (answer1 .equals(question2)){
-	JOptionPane.showMessageDialog(null, "Great job, " +name+ "! Now for your next question...");
+String answer1 = ("Echo");
+if (answer1 .equalsIgnoreCase(question2)){
+	JOptionPane.showMessageDialog(null, "Great job, " +name+ "!");
 	Score++;
 }
 else {
-	JOptionPane.showMessageDialog(null, "Nice try! The correct answer is, An Echo.");
+	JOptionPane.showMessageDialog(null, "Nice try! The correct answer is, Echo.");
 }
 
 
